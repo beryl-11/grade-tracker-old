@@ -1,7 +1,7 @@
 import ModalExitButton from "./ModalExitButton";
 
 function ModalTemplate({ children }) {
-  return <div className="modal">
+  return <div className="modal" onClick={(e) => e.stopPropagation()}>
     <ModalExitButton />
     {children}
   </div>

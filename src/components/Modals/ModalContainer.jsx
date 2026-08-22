@@ -4,15 +4,15 @@ import { AddCourseModal, SettingsModal } from "./Modal";
 import { ModalContextProvider, useModalContext } from './ModalManager';
 
 export function ModalContainer() {
-    const { modalState } = useModalContext();
+    const { modalState, closeModal } = useModalContext();
     const overlaysDiv = document.getElementById("overlays");
 
     function selectModal() {
         switch (modalState) {
             case ("settings"):
-                return <SettingsModal/>;
+                return <SettingsModal />;
             case ("add-course"):
-                return <AddCourseModal/>;
+                return <AddCourseModal />;
             default:
                 return <em>ERROR: No existing modal.</em> // TODO: Create an error modal for this default
         }
@@ -20,8 +20,7 @@ export function ModalContainer() {
 
     return createPortal(
         <>
-            {/* TODO: Close modal from backdrop without having onClick read clicks from child elements */}
-            {modalState !== "closed" && <div className='modal-backdrop'>
+            {modalState !== "closed" && <div className='modal-backdrop' onClick={closeModal}>
                 {selectModal()}
             </div>}
         </>,
