@@ -1,0 +1,107 @@
+[
+  {
+    "semester": "Spring-2026",
+    "courseList": [
+      {
+        "courseName": "S26C1: First Course of the Spring Semester",
+        "courseId": "S26C1",
+        "credit": 4,
+        "grade": "A+",
+        "assignments": [
+          {
+            "assignmentName": "Homework 1",
+            "category": "Homework",
+            "score": 95,
+            "max": 100,
+            "weight": 1
+          },
+          {
+            "assignmentName": "Midterm",
+            "category": "Assessments",
+            "score": 88,
+            "max": 100,
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semester": "Fall-2025",
+    "courseList": [
+      {
+        "courseName": "F25C1: Introduction to Fall 2025",
+        "courseId": "F25C1",
+        "credit": 4,
+        "grade": "A+",
+        "assignments": [
+          {
+            "assignmentName": "Pre-test",
+            "category": "Assessments",
+            "score": 95,
+            "max": 100,
+            "weight": 1
+          },
+          {
+            "assignmentName": "Midterm 1",
+            "category": "Assessments",
+            "score": 88,
+            "max": 100,
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "courseName": "F25C2: Another Fall Semester Course",
+        "courseId": "F25C2",
+        "credit": 2,
+        "grade": "A-",
+        "assignments": [
+          {
+            "assignmentName": "Participation 7/28",
+            "category": "Participation",
+            "score": 95,
+            "max": 100,
+            "weight": 1
+          },
+          {
+            "assignmentName": "Midterm",
+            "category": "Assessments",
+            "score": 88,
+            "max": 100,
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "courseName": "F25C3: For the Third Time",
+        "courseId": "F25C3",
+        "credit": 4,
+        "grade": "B",
+        "assignments": [
+          {
+            "assignmentName": "Reading",
+            "category": "Homework",
+            "score": 95,
+            "max": 100,
+            "weight": 1
+          },
+          {
+            "assignmentName": "Final",
+            "category": "Assessments",
+            "score": 88,
+            "max": 100,
+            "weight": 1
+          },
+          {
+            "assignmentName": "Individual Project",
+            "category": "Assessments",
+            "score": 100,
+            "max": 100,
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* || UNIVERSAL STYLES */
+:root {
+    --primary-color: rgb(192, 243, 228);
+    --background-color: #F5F5F0;
+    --accent-color: #E3E3B0;
+    --focus-color: #98907c;
+    --text-color: #474036;
+    --icon-color: #474036e2;
+    --highlight-color: #e3e3b085;
+    --shadow-color: #47403651;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* || General Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        padding: 0 3rem;
+    }
+}
+
+section>header,
+section {
+    max-width: 100%;
+    margin: 2rem 0;
+    /* border: 1px solid red; */
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border: 3px solid var(--focus-color);
+    border-radius: 1.5rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: var(--focus-color);
+}
+
+button:active {
+    transform: scale(.99);
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: var(--focus-color);
+}
+
+hr {
+    border: 2px solid var(--focus-color);
+    border-radius: 12px;
+}
+
+/* table formatting */
+.table-wrapper {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 525px) {
+    .table-wrapper {
+        overflow-x: scroll;
+    }
+}
+
+table:not(.collapsible-content) {
+    border-collapse: separate;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    border: 3.5px solid var(--focus-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead:not(.collapsible-content thead) {
+    background-color: var(--accent-color);
+}
+
+th:not(.collapsible-content th),
+td:not(.collapsible-content td) {
+    padding: 1rem;
+}
+
+tr:nth-of-type(2n):not(.collapsible-content tr) {
+    background-color: var(--highlight-color);
+}
+
+/* || Utilities */
+.flex-container {
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.page-title {
+    font-size: 3rem;
+}
+
+.overall-grade {
+    font-size: 1.9rem;
+    margin-top: 0.5rem;
+}
+
+.circle-placeholder {
+    background-color: var(--accent-color);
+    border: 4px solid var(--focus-color);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+/* Button Style */
+.icon {
+    color: var(--icon-color);
+    aspect-ratio: 1/1;
+    min-width: 20px;
+    /* border: 1px solid black; */
+}
+
+/* || Global Header */
+.global-header {
+    background-color: var(--accent-color);
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 3px solid var(--focus-color);
+    width: 100%;
+}
+
+.global-header>div {
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.header-btn-wrapper {
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.global-header a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.global-header-btn {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: var(--background-color);
+    padding: 8px;
+    /* align-items: center;
+    justify-content: center;
+    display: flex; */
+}
+
+/* Grade Details Section */
+@media screen and (min-width: 660px) {
+    #grade-details-grid {
+        grid-template-columns: 2fr 1fr;
+        /* gap: 3rem; */
+    }
+
+    .graph-wrapper {
+        /* border: 1px solid green; */
+        padding: 3rem 0 3rem 3rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .graph-wrapper {
+        /* border: 1px solid green; */
+        padding: 3rem;
+    }
+}
+
+#gpa-breakdown-graph {
+    max-width: 100%;
+    height: auto;
+}
+
+#details-list {
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid skyblue; */
+}
+
+.course-name {
+    width: 100%;
+}
+
+/* || Toolbar */
+.toolbar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.toolbar-btn {
+    padding: 25%;
+    min-width: 70px;
+    min-height: 70px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+#add-course-btn:active {
+    transform: scale(.95);
+    transition: transform 0.3s ease;
+}

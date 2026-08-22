@@ -1,0 +1,48 @@
+.collapsible {
+    width: 100%;
+    font-size: 1.1rem;
+    /* border: 1px solid blue; */
+}
+
+.collapsible-btn {
+    width: 100%;
+    padding: 0.5em;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 550;
+    margin: 1rem 0 0.5rem 0;
+    display: inline-block;
+}
+
+.collapsible-btn::before {
+    content: "+ ";
+}
+
+.collapsible:has(.expanded) > .collapsible-btn::before {
+    content: "- ";
+}
+
+.collapsible-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: all 0.35s;
+    margin: 0.5em 2em;
+    overflow: hidden;
+}
+
+.collapsed {
+    grid-template-rows: 0fr;
+    transition: all 0.35s;
+    margin: 0 2em;
+}
+
+.collapsible table {
+    border: 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+.collapsible tr:hover {
+    cursor: pointer;
+    color: var(--focus-color);
+}
