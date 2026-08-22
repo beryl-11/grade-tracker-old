@@ -17,10 +17,10 @@ function Layout() {
         </main>
         <QuickActionToolbar />
       </div>
-
-      <div id="overlays">
+      <div id="overlays"> {/* TODO: Render the Modal in the overlays div instead of somewhere random */}
         <ModalContainer />
-      </div>
+        </div>
+
     </ModalContextProvider>
   </>
 }
