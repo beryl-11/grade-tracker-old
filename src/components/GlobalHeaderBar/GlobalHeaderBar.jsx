@@ -9,7 +9,7 @@ export default function GlobalHeaderBar() {
       </div>
 
       <div className="header-btn-wrapper flex-container">
-        <ModalOpenButton className="global-header-btn" id="settings-btn" />  {/* TODO: Fix style of global header buttons*/}
+        <ModalOpenButton className="global-header-btn" id="settings-btn" modalRef={"settings"}/>  {/* TODO: Fix style of global header buttons*/}
       </div>
     </header>
     </>

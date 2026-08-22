@@ -5,7 +5,7 @@ export default function ModalOpenButton({ modalRef, textContent = "" }) {
     const { openModal } = useModalContext();
 
     const openBtnHandler = () => {
-        openModal("open");
+        openModal(modalRef);
     }
 
     return <button type="button" className="modal-open-btn" onClick={openBtnHandler}>
