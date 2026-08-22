@@ -1,4 +1,3 @@
-import "../../css/ModalOpenButton.css"
 import { useModalContext } from "./ModalManager";
 import { QuestionIcon } from "@phosphor-icons/react";
 
